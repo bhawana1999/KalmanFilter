@@ -22,7 +22,7 @@ x -> Mean
 
 P -> Variance
 
-<img src = "" >
+<img src = "https://github.com/sona-19/KalmanFilter/blob/master/images/flowchart.jpeg" >
 
 
 <b>Kalman Gain</b> is a parameter which decides how much weight should be given to predicted value and measured value. It is a parameter that decides whether our actual value is close to predicted value or measured value.
@@ -166,7 +166,7 @@ This is the final step where we update our x and P according to the calculations
 
 
 
-<img src = "">
+<img src = "https://github.com/sona-19/KalmanFilter/blob/master/images/summary.jpeg">
 
 <b>References</b>
 
