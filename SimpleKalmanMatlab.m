@@ -1,4 +1,4 @@
-function volt = SimpleKalman(z)
+function volt = SimpleKalmanMatlab(z)
 %
 %
 persistent A H Q R 
