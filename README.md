@@ -173,3 +173,4 @@ This is the final step where we update our x and P according to the calculations
 1. https://towardsdatascience.com/kalman-filter-interview-bdc39f3e6cf3
 2. https://www.youtube.com/channel/UCiGxYawhEp4QyFcX0R60YdQ
 3. https://github.com/csalinasonline/KalmanMatlabCode
+4. https://github.com/zziz/kalman-filter
