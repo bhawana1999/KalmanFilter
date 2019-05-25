@@ -35,7 +35,8 @@ The value of the K ranges from 0 to 1. If we have a large error in measurement, 
 
 <b>Mathematical Model</b>
 
-<img src = "" >
+<img src = "https://github.com/sona-19/KalmanFilter/blob/master/images/prediction.jpeg" >
+<img src = "https://github.com/sona-19/KalmanFilter/blob/master/images/update.jpeg">
 
 Suppose we are want to predict the position and velocity of car from the measurements coming from different sensors.
 
