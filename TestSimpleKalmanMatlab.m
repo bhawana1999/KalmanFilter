@@ -11,7 +11,7 @@ Zsaved = zeros(Nsamples, 1);
 
 for k=1:Nsamples
   z = GetVolt();  
-  volt = SimpleKalman(z);
+  volt = SimpleKalmanMatlab(z);
   
   Xsaved(k) = volt;
   Zsaved(k) = z;
