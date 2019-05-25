@@ -5,6 +5,7 @@ A Kalman Filter is a tool that helps to predict values.It is an iterative mathem
 The first thing, kalman filters work with gaussians or normal distribution. To define a Gaussian, we have basically two things- mean and variance. 
 Mean(μ) you obviously know, Variance(σ²) basically tells how much the numbers are spread out and how far are they from mean. Standard Deviation(σ) is just the square root of Variance(σ²).
 
+<img src ="">
 A Gaussian in a Kalman Filter represents the predicted value with noise/error/uncertainty in our prediction often known as the variance. The predicted value is centered around the mean with the width of the Gaussian denoting the uncertainty in our value. Basically it tells how much sure we are of a certain value to be true. More the width of the Gaussian denotes more uncertainty.
 
  It is basically a two step process-
