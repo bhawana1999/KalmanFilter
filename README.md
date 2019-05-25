@@ -44,6 +44,8 @@ Suppose we are want to predict the position and velocity of car from the measure
     
     
  x vector is given as - 
+ 
+ 
  <img src = "https://github.com/sona-19/KalmanFilter/blob/master/images/xvector.gif">
     
  Prediction Step
