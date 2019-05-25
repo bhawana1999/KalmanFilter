@@ -68,7 +68,12 @@ p′ = p + vΔt
 
 v′=v
 So in this case the F matrix will be:
+
+
+<img src = "https://github.com/sona-19/KalmanFilter/blob/master/images/Fmatrix.gif">
 F Matrix
+
+
 B Matrix
 
 B is the control input matrix that denotes the change in state of object due to internal or any external force. For example- the force of gravity or the force of friction to the object.
