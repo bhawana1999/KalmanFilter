@@ -42,8 +42,9 @@ Suppose we are want to predict the position and velocity of car from the measure
     x -> mean state vector containing position and velocity.
     P -> covariance matrix (denoting error).
     
-    x vector is given as - 
-    <img src = "https://github.com/sona-19/KalmanFilter/blob/master/images/xvector.gif">
+    
+ x vector is given as - 
+ <img src = "https://github.com/sona-19/KalmanFilter/blob/master/images/xvector.gif">
     
  Prediction Step
 
