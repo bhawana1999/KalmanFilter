@@ -48,7 +48,7 @@ Suppose we are want to predict the position and velocity of car from the measure
  
  <img src = "https://github.com/sona-19/KalmanFilter/blob/master/images/xvector.gif">
     
- Prediction Step
+ <b>Prediction Step</b>
 
     Equation 1-:
 
@@ -60,7 +60,7 @@ Suppose we are want to predict the position and velocity of car from the measure
     μ -> Control Vector
     ν -> Process Noise
 
-F Matrix
+<b>F Matrix</b>
 
 F is a state transition matrix or an adaptable matrix that are required to convert matrix from one form to the other. For example- say we have a model where we are predicting the position and velocity of the object which is not accelerating. So in this case the new p and v after a time delta t is given as-:
 
@@ -74,15 +74,19 @@ So in this case the F matrix will be:
 F Matrix
 
 
-B Matrix
+<b>B Matrix</b>
 
 B is the control input matrix that denotes the change in state of object due to internal or any external force. For example- the force of gravity or the force of friction to the object.
-Why B.μ = 0?
+
+<b>Why B.μ = 0?</b>
 
 Mostly, in the context of autonomous cars the value of control product vector is equal to zero because we cannot model the external forces acting on objects from the car.
-ν
+
+
+<b>ν</b>
 
 This is the noise in the process. We add random noise that might be present in the channel to make our prediction a little correct.
+
 
     Equation 2-:
 
@@ -92,12 +96,14 @@ This is the noise in the process. We add random noise that might be present in t
     Fᵀ -> Transpose of State Transition Matrix
     Q -> Noise
 
-Q Matrix
+<b>Q Matrix</b>
 
 We assume that the object changed direction or maybe accelerated or decelerated. So after a time Δt, our uncertainty increases by a factor of Q which is again noise. So we add noise into noise technically.
 
 So in the prediction step we get the two predicted values x′ and P′.
-Update Step
+
+
+<b>Update Step</b>
 
     Equation 1:
 
@@ -108,10 +114,11 @@ Update Step
     x′ -> Predicted Value
     y -> Difference between Measured Value and Actual Value
 
-z
+<b>z</b>
 
 This is the actual measured value that is coming from the sensor.
-H
+
+<b>H</b>
 
 This is again a state transition matrix. With H, we can discard information from the state variable that we do not require. Technically H is doing the same work what F was doing in Prediction Step.
 
@@ -125,13 +132,16 @@ This is again a state transition matrix. With H, we can discard information from
     S-> Total Error
     S⁻¹ -> The inverse of S
 
-R
+<b>R</b>
 
 R denotes the noise in the measurement. What? So those devices are not 100% accurate? Yup, nothing is perfect in this world and not even the devices that measure the values. All devices comes with a predefined value for R parameter that is given by the manufacturer, this value always remains constant throughout the cycle.
-K
+
+<b>K</b>
 
 We have a complex equation here but it is very simple. We are calculating the Kalman Gain K, formula for which was given earlier.
-S
+
+
+<b>S</b>
 
 This is the total error in the system. The error in our prediction plus the error in measurement.
 
@@ -143,7 +153,7 @@ This is because we do not have a notion of division for matrices. Hence we opt t
     x = x′ + K.y
     P = (I- KH)P′
 
-Final Step
+<b>Final Step</b>
 
 This is the final step where we update our x and P according to the calculations done by the Kalman Gain. Note- On the LHS, we have x and P and not x′ and P′ because we are now setting x and P for the next prediction step, hence we need to find their values.
 
