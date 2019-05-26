@@ -1,6 +1,6 @@
 # Kalman Filter
 
-A Kalman Filter is a tool that helps to predict values.It is an iterative mathematical process that uses a set of equations and consecutive data inputs to estimate the values we are interested in associated with the object quickly.
+A Kalman Filter is a tool that helps to predict values. It is an iterative mathematical process that uses a set of equations and consecutive data inputs to estimate the values we are interested in associated with the object quickly.
 
 The first thing, kalman filters work with gaussians or normal distribution. To define a Gaussian, we have basically two things- mean and variance. 
 Mean(μ) you obviously know, Variance(σ²) basically tells how much the numbers are spread out and how far are they from mean. Standard Deviation(σ) is just the square root of Variance(σ²).
