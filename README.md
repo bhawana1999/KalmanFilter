@@ -176,4 +176,5 @@ This is the final step where we update our x and P according to the calculations
 4. https://github.com/zziz/kalman-filter
 5. https://in.mathworks.com/matlabcentral/fileexchange/68262-introduction-to-kalman-filter-and-its-applications
 6. https://www.bzarg.com/p/how-a-kalman-filter-works-in-pictures/
+7. https://towardsdatascience.com/kalman-filter-an-algorithm-for-making-sense-from-the-insights-of-various-sensors-fused-together-ddf67597f35e
 
